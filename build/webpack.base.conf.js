@@ -10,7 +10,10 @@ const PATHS = {
   assets: "assets/"
 };
 //const PAGES_DIR = PATHS.src;
-const PAGES_DIR = `${PATHS.src}/html`;
+const PAGES_DIR = PATHS.src;
+const PAGES = fs
+  .readdirSync(PAGES_DIR)
+  .filter(fileName => fileName.endsWith(".html"));
 
 
 module.exports = {
@@ -100,15 +103,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`
     }),
-    new HtmlWebpackPlugin({
-      template: `${PAGES_DIR}/index.html`,
-      filename: './index.html',
-      inject: true
-    }), new HtmlWebpackPlugin({
-      template: `${PAGES_DIR}/about.html`,
-      filename: './about.html',
-      inject: true
-    }),
     new CopyWebpackPlugin([{
         from: `${PATHS.src}/${PATHS.assets}img`,
         to: `${PATHS.assets}img`
@@ -120,7 +114,14 @@ module.exports = {
         from: `${PATHS.src}/static`,
         to: ''
       }
-    ])
+    ]),
 
+    ...PAGES.map(
+      page =>
+      new HtmlWebpackPlugin({
+        template: `${PAGES_DIR}/${page}`,
+        filename: `./${page}`
+      })
+    )
   ]
 };
