@@ -23,11 +23,26 @@
             url('/assets/fonts/Helvetica/Base/Helvetica-Base.svg') format('svg'); // Legacy iOS
      } */
 
+
 @font-face {
-  font-family: "HelvetiaVerbundene-24wo";
-  src: url("/assets/fonts/helvetia-verbundene-font/HelvetiaVerbundene-24wo.ttf");
+  font-family: 'Poppins-Regular', Verdana, sans-serif;
+  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'Poppins-Bold', Verdana, sans-serif;
+  src: url("/assets/fonts/Poppins/Poppins-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular', Verdana, sans-serif;
+  src: url("/assets/fonts/Poppins/OpenSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold', Verdana, sans-serif;
+  src: url("/assets/fonts/Poppins/OpenSans-Bold.ttf") format('truetype');
+}
 
 // 2. Example with mixin (example):
 // NOTE: do NOT use expansion (.woff, .svg etc) for path! Path will be '/assets/fonts/OpenSans/opensans';

@@ -9,6 +9,7 @@ const PATHS = {
   dist: path.join(__dirname, "../dist"),
   assets: "assets/"
 };
+
 //const PAGES_DIR = PATHS.src;
 const PAGES_DIR = PATHS.src;
 const PAGES = fs
