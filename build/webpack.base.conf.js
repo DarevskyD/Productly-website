@@ -27,7 +27,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
-    publicPath: "/"
+    publicPath: ""
   },
   module: {
     rules: [{
@@ -102,7 +102,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: `${PATHS.assets}css/[name].css`
+      filename: `${PATHS.assets}css/[name].css`     
     }),
     new CopyWebpackPlugin([{
         from: `${PATHS.src}/${PATHS.assets}img`,
@@ -113,7 +113,7 @@ module.exports = {
       },
       {
         from: `${PATHS.src}/static`,
-        to: ''
+        to: `static`
       }
     ]),
 
