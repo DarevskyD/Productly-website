@@ -1,8 +1,15 @@
+//Utils
 @import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
 @import "utils/fonts";
 @import "utils/reset";
+
+//Modules
+@import "modules/header";
+@import "modules/promo";
+@import "modules/buttons.scss";
+@import "modules/contact-us.scss";
 
 html {
   line-height: $mainLineHeight;
@@ -27,7 +34,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: $mainFont;
-  font-size: $mainFontSize;
+  font-size: 1.6rem;
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -46,6 +53,46 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h1 {
+  font-family: $secondBoldFont;
+  font-size: 44px;
+  line-height: 54px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h2 {
+  font-family: $boldFont;
+  font-size: 34px;
+  line-height: 46px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3 {
+  font-family: $boldFont;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h4 {
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;  
+  font-style: normal;
+}
+
+h5 {
+  font-family: $boldFont;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 a {
@@ -78,17 +125,10 @@ section,
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  max-width: $desktopWidth;
   margin: 0 auto;
-  min-height: 0;
-  min-width: 100vh;
-}
-
-.content-wrapper {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  padding: 0 15px;
 }
 
 .container {
@@ -111,5 +151,3 @@ section,
   }
 }
 
-@import "modules/wrapper.scss";
-@import "modules/header.scss";
