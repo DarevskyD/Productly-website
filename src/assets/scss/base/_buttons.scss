@@ -1,0 +1,35 @@
+.button {
+    padding: 11px 25px 13px;
+    @extend %font-prim;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    @extend %transition;
+}
+
+.button_bordered {
+    background: $light-color;
+    border: 1px solid $border-color;
+    color: $main-color;
+}
+
+.button_colored {
+    background: $primary-color;
+    border: 1px solid $primary-color;
+    color: $light-color;
+}
+
+.link-button {
+    color: $primary-color;
+    text-decoration: $primary-color;
+    text-decoration-line: underline;
+    @extend %font-add;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-button__text {
+    margin-left: 9px;
+}
+
