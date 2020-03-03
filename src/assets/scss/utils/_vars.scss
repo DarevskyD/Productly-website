@@ -1,28 +1,7 @@
-
-// Font
-$mainFont : 'OpenSans-Regular',
-Verdana,
-sans-serif;
-
-$boldFont : 'OpenSans-Bold',
-Verdana,
-sans-serif;
-
-$secondMainFont : 'Poppins-Regular',
-Verdana,
-sans-serif;
-
-$secondBoldFont : 'Poppins-Bold',
-Verdana,
-sans-serif;
-
-
 // Size
-$mainFontSize : 10px;
-$mainFontWeight : 400;
-$mainLineHeight : 1.4;
+$main-size : 10px;
 
-$desktopWidth : 1200px;
+$desktopWidth : 1197px;
 $smDesktopWidth : 1024px;
 $tableWidth : 768px;
 $smTableWidth : 640px;
@@ -31,7 +10,7 @@ $smPhoneWidth : 320px;
 
 
 // Main color
-$mainFontColor : #544837;
+$main-color : #544837;
 $primary-color: #FF9900;
 $additional-color: #FF7549;
 $background-color: #FFEEE1;
@@ -41,9 +20,9 @@ $heading-color: #2F281E;
 $border-color: #D7D7D7;
 $signup-color: #BCD0E5;
 $light-color: #ffffff;
-$color-hovered: #BCD0E5;;
 
-$voilet-color: #7752BE;
-$yellow-color: #FAB005;
-$red-color: #F03E3D;
-$blue-color: #4DADF7;
+$color-hovered: #BCD0E5;
+$color-yellow: #FAB005;
+$color-red: #F03E3D;
+$color-blue: #4DADF7;
+$color-violet: #7752BE;

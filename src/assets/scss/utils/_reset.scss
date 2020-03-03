@@ -133,7 +133,11 @@ html {
   outline: 0;
 }
 
-img,
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 audio,
 video {
   max-width: 100%;
@@ -189,4 +193,12 @@ td,
 th {
   padding: 0;
   text-align: left;
+}
+
+section,
+main,
+footer,
+header,
+article {
+  display: block;
 }

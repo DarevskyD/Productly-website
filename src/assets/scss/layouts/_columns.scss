@@ -1,3 +1,11 @@
 .layout-4-column {
-    @include columns($width: 21%);
+    @include columns(calc(25%-50px));
+}
+
+.layout-3-column {
+    @include columns(31%);
+}
+
+.layout-2-column {
+    @include columns($width: 48%);
 }
