@@ -1,0 +1,6 @@
+.logo-svg:hover {
+    .logo-path {
+        fill: $primary-color;
+        @extend %transition;
+    }
+}
