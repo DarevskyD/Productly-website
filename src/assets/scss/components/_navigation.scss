@@ -1,15 +1,21 @@
 .navigation {
-    display: flex;  
+    display: flex;
     font-size: 1.5rem;
-    line-height: 2.8rem; 
+    line-height: 2.8rem;
 }
 
 .navigation__link {
     padding: 0 10px;
     cursor: pointer;
-    @extend %transition;    
+    @extend %transition;
 
     &:hover {
         color: $primary-color;
+    }
+}
+
+.header__navigation {
+    @include media-tablet {
+        display: none;
     }
 }

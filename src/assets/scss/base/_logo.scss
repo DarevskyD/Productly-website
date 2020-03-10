@@ -1,6 +1,23 @@
-.logo-svg:hover {
-    .logo-path {
-        fill: $primary-color;
-        @extend %transition;
+.logo {
+    display: flex;
+}
+
+.logo-object {
+    @include media-mobile {
+        width: 160px;
+    }  
+}
+
+.logo-path {
+    @extend %transition;
+}
+
+.logo-svg {
+    cursor: pointer;
+
+    &:hover {
+        .logo-path {
+            fill: $primary-color;
+        }
     }
 }
