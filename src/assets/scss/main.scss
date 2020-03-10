@@ -1,18 +1,18 @@
-//Utils
-@import "utils/libs";
-@import "utils/vars";
-@import "utils/fonts";
-@import "utils/reset";
-
 //Abstract
 @import "abstract/mixins";
 @import "abstract/placeholders";
+@import "abstract/constants";
 
 //Base
 @import "base/base";
 @import "base/buttons";
 @import "base/icons";
 @import "base/tags";
+@import "base/logo";
+@import "base/normalize";
+@import "base/fonts";
+@import "base/hamburger";
+
 
 //Components
 @import "components/contact-us";
@@ -20,108 +20,10 @@
 @import "components/navigation";
 @import "components/tools";
 @import "components/strategies";
+@import "components/about-us";
 
 //layouts
 @import "layouts/header";
 @import "layouts/columns";
-
-
-html {
-  font-size: $main-size;
-  color: $main-color;
-
-  @media screen and (max-width: $desktopWidth) {
-    font-size: 16px;
-  }
-
-  @media screen and (max-width: $tableWidth) {
-    font-size: 15px;
-  }
-
-  @media screen and (max-width: $phoneWidth) {
-    font-size: 14px;
-  }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  @extend %font-prim;
-  @include font (1.6rem, 2.6rem, normal);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-h1 {
-  @extend %font-add-bold;
-  @include font (4.4rem, 5.4rem);
-}
-
-h2 {
-  @extend %font-prim-bold;
-  @include font (3.4rem, 4.6rem);
-}
-
-h3 {
-  @extend %font-prim-bold;
-  @include font (2.4rem, 3.4rem);
-}
-
-h4 {
-  @extend %font-prim;
-  @include font (2.2rem, 3.0rem, $weight: 600);
-}
-
-h5 {
-  @extend %font-prim-bold;
-  @include font (1.6rem, 2.6rem);
-}
-
-a {
-  text-decoration: none;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-section,
-.section {
-  position: relative;  
-
-  @media screen and (max-width: $smDesktopWidth) {
-    padding: 36px 0;
-  }
-
-  @media screen and (max-width: $tableWidth) {
-    padding: 28px 0;
-  }
-
-  @media screen and (max-width: $phoneWidth) {
-    padding: 20px 0;
-  }
-}
-
-.wrapper {
-  max-width: $desktopWidth;
-  margin: 0 auto; 
-  padding: 0 15px;
-}
+@import "layouts/footer";
+@import "layouts/wrapper";
