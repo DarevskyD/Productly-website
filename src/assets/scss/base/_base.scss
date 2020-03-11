@@ -3,9 +3,7 @@ html {
     color: $main-color;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+body {    
     @extend %font-prim;
     @include font (1.6rem, 2.6rem, normal);
 }

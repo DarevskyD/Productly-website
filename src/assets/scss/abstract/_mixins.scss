@@ -1,45 +1,3 @@
-/* Mixins:
-   ========================================================================== */
-
-// px to rem
-@function rem($pixels, $context: $content-width) {
-  @if (unitless($pixels)) {
-    $pixels: $pixels * 1px;
-  }
-
-  @if (unitless($context)) {
-    $context: $context * 1px;
-  }
-
-  @return $pixels / $context * 1rem;
-}
-
-// size to one line
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}
-
-// placeholder helper
-@mixin placeholder {
-  ::-webkit-input-placeholder {
-    @content;
-  }
-
-  :-moz-placeholder {
-    @content;
-  }
-
-  ::-moz-placeholder {
-    @content;
-  }
-
-  :-ms-input-placeholder {
-    @content;
-  }
-}
-
-
 @mixin font ($size, $height: $size, $weight: bold, $style: normal) {
   font-size: $size;
   line-height: $height;
@@ -58,17 +16,25 @@
 }
 
 @mixin media-laptop {
-  @media (max-width: $content-width) { @content; }
+  @media (max-width: $content-width) {
+    @content;
+  }
 }
 
 @mixin media-tablet {
-  @media (max-width: $tablet-width) { @content; }
+  @media (max-width: $tablet-width) {
+    @content;
+  }
 }
 
 @mixin media-mobile {
-  @media (max-width: $mobile-big-width) { @content; }
+  @media (max-width: $mobile-big-width) {
+    @content;
+  }
 }
 
 @mixin media-mobilesmall {
-  @media (max-width: $mobile-small-width) { @content; }
+  @media (max-width: $mobile-small-width) {
+    @content;
+  }
 }

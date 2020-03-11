@@ -4,13 +4,9 @@
     @include media-tablet {
         text-align: center;
     }
-}
 
-.strategies__sort {
-    margin-bottom: 31px;
-
-    @include media-tablet {
-        justify-content: center;
+    @include media-mobile {
+        padding: 63px 0 0;
     }
 }
 
@@ -20,6 +16,14 @@
 
 .strategies__description {
     margin: 0 0 24px;
+}
+
+.strategies__tags {
+    margin-bottom: 31px;
+
+    @include media-tablet {
+        justify-content: center;
+    }
 }
 
 .strategy-wrapper {
