@@ -33,10 +33,6 @@
         @include media-tablet {
             flex-basis: 48%;
         }
-
-        @include media-mobile {
-            flex-basis: 100%;
-        }
     }
 }
 
