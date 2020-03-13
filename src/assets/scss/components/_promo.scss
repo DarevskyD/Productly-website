@@ -7,6 +7,14 @@
     }
 }
 
+body {
+    .promo {
+        @include media-mobile {
+            padding-bottom: 49px;
+        }
+    }
+}
+
 .promo__wrapper {
     display: flex;
     justify-content: space-between;

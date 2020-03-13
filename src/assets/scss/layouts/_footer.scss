@@ -1,15 +1,33 @@
 .footer {
-    padding: 58px 0 60px;
+    padding: 60px 0;
+
+    @include media-mobile {
+        padding: 30px 0;
+    }
 }
 
 .footer__wrapper {
     display: flex;
+
+    @include media-tablet {
+        flex-direction: column;
+    }
 }
 
 .footer-navigation {
     flex-grow: 1;
     padding-left: 152px;
+
+    @include media-tablet {
+        padding-left: 0;
+        margin-top: 34px;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+    }
 }
+
 
 .footer-navigation__title {
     margin: 0 0 15px;

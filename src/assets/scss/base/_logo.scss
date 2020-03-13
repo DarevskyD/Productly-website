@@ -3,9 +3,8 @@
 }
 
 .logo-object {
-    @include media-mobile {
-        width: 160px;
-    }  
+    width: 160px;
+    height: 32px;
 }
 
 .logo-path {

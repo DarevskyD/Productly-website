@@ -28,10 +28,27 @@
 
 .strategy-wrapper {
     >* {
-        margin-bottom: 30px;
-
         @include media-tablet {
             flex-basis: 48%;
+        }
+    }
+}
+
+.strategies {
+    .strategy-wrapper {
+        >* {
+            margin-bottom: 30px;
+
+            @include media-mobile {
+                flex-basis: 100%;
+            }
+
+            &:last-child() {
+                @include media-mobile {
+                    margin-bottom: 0;
+                }
+
+            }
         }
     }
 }

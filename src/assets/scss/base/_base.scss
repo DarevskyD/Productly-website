@@ -26,6 +26,9 @@ h1 {
 h2 {
     @extend %font-prim-bold;
     @include font (3.4rem, 4.6rem);
+    @include media-mobile {
+        @include font (2.4rem, 3.3rem);
+    }
 }
 
 h3 {
@@ -40,6 +43,9 @@ h3 {
 h4 {
     @extend %font-prim;
     @include font (2.2rem, 3.0rem, $weight: 600);
+    @include media-tablet {
+        @include font (2.0rem, 3.0rem);
+    }
 }
 
 h5 {
