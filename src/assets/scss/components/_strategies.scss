@@ -59,6 +59,10 @@
     flex-direction: column;
     position: relative;
 
+    &_hidden {
+        display: none;
+    }
+
     @include media-tablet {
         overflow: hidden;
         padding-top: 200px;
