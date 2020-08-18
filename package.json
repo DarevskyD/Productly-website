@@ -37,7 +37,10 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "elliptic": "^6.5.3",
+    "lodash": "^4.17.20",
     "minimist": "^1.2.5",
-    "serialize-javascript": "^4.0.0"
+    "serialize-javascript": "^4.0.0",
+    "websocket-extensions": "^0.1.4"
   }
 }
