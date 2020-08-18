@@ -4,6 +4,7 @@
 
     @include media-tablet {
         text-align: center;
+        padding: 20px 0 40px;
     }
 }
 
@@ -21,12 +22,12 @@
     max-width: 520px;
 
     @include media-tablet {
-        min-width: 100%;
+        max-width: 100%;
         margin-bottom: 52px;
     }
 }
 
-.contact-us__text {
+.contact-us__text {    
     margin: 0 0 34px;
 }
 
@@ -40,10 +41,14 @@
         justify-content: center;
     }
 
+    @include media-mobile {
+        @include font(1.6rem, 2.0rem, normal);
+    }
+
     a {
         margin-left: 11px;
         color: $main-color;
-        text-decoration: none;
+        text-decoration: none;      
     }
 
     &:hover {

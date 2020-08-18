@@ -6,12 +6,16 @@
 
 .navigation__link {
     padding: 0 10px;
-    cursor: pointer;
-    @extend %transition;
+    cursor: pointer;   
 
-    &:hover {
-        color: $primary-color;
-    }
+    >* {
+        color: $main-color;
+
+        &:hover {
+            color: $primary-color;
+            @extend %transition;
+        }
+    }    
 }
 
 .header__navigation {

@@ -8,6 +8,11 @@ body {
     @include font (1.6rem, 2.6rem, normal);
 }
 
+body,
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *:before,
 *:after {

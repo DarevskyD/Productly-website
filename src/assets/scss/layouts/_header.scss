@@ -24,16 +24,6 @@
     display: none;
   }
 
-  .button_bordered:hover {
-    background: $color-hovered;
-    border-color: $color-hovered;
-  }
-
-  .button_colored:hover {
-    background: $additional-color;
-    border-color: $additional-color;
-  }
-
   .button {
     margin-left: 14px;
   }
@@ -41,4 +31,14 @@
   .button:first-child {
     margin-left: 0;
   }
+}
+
+.button_bordered:hover {
+  background: $color-hovered;
+  border-color: $color-hovered;
+}
+
+.button_colored:hover {
+  background: $additional-color;
+  border-color: $additional-color;
 }

@@ -2,18 +2,43 @@ $image-gap: 32px;
 
 .about-us {
     padding: 40px 0 100px;
+
+    @include media-tablet {
+        padding: 40px 0 20px;
+    }
 }
 
 .about-us__title {
     margin: 0 0 14px;
+
+    @include media-tablet {
+        text-align: center;
+    }
 }
 
 .about-us__description {
     margin: 0 0 45px;
+
+    @include media-tablet {
+        text-align: center;
+    }
 }
 
 .employee-container {
     padding-right: $image-gap;
+
+    @include media-tablet {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+    }
+
+    .employee {
+        @include media-mobile {
+            width: 90%;
+            padding: 35px 35px 35px 10px;
+        }
+    }
 }
 
 .employee {
@@ -21,6 +46,11 @@ $image-gap: 32px;
     padding: 35px;
     position: relative;
     width: calc(30% - 32px);
+
+    @include media-tablet {
+        margin: 0 auto 15px;
+        width: 70%;
+    }
 }
 
 .employee__photo {
@@ -31,6 +61,14 @@ $image-gap: 32px;
     right: -$image-gap;
     top: 20px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+
+    @include media-mobile {
+        right: 10px;
+        width: 70px;
+        height: 70px;
+        bottom: 20px;
+        top: auto;
+    }
 }
 
 .employee__name {
