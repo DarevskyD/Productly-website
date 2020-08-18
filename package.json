@@ -37,6 +37,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.5",
+    "serialize-javascript": "^4.0.0"
   }
 }
