@@ -1,24 +1,16 @@
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $overlay-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .modal {
-    position: relative;
+    position: fixed;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
     border-radius: 10px;
     background-color: $light-color;
     max-width: 675px;    
     max-height: 90%;
     overflow: hidden;
     overflow-y: auto;
-    @extend %custom-scroll;
+    display: none;
+    @extend %custom-scroll;    
 
     @include media-tablet {
         max-width: 90%;
