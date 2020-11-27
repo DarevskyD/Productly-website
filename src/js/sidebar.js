@@ -6,7 +6,7 @@ function sidebar() {
         sideBar = document.querySelector('.sidebar');
 
 
-    function openSidebar() {
+        function openSidebar() {
         menuIconHamburger.addEventListener('click', () => {
             menuIconHamburger.classList.toggle('change');
             sideBar.classList.toggle('change');

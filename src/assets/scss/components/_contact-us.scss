@@ -85,6 +85,10 @@
 .contact-us__line {
     margin-bottom: 19px;
 
+    input {
+        margin-bottom: 8px;
+    }
+
     @include media-mobile {
         flex-direction: column;
         margin-bottom: 0;
