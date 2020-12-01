@@ -1,6 +1,6 @@
 function modal() {
     const date = document.querySelector('.modal__date'),
-        closeIcon = document.querySelector('.close-ico'),
+        closeIcon = document.querySelector('.ico_close'),
         modal = document.querySelector('.modal'),
         overlayModal = document.querySelector('.overlay-modal'),        
         buttonOpenModal = document.querySelectorAll('.button_open_modal');      

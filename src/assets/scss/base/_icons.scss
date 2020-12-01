@@ -4,7 +4,7 @@
 }
 
 .ico_play {
-    background-image: url('/assets/img/icons/play.svg');
+    background-image: url('/assets/img/icons-svg/play.svg');
     width: 18px;
     height: 19px;
 }
@@ -48,37 +48,43 @@
 }
 
 .ico_arrow {
-    background-image: url('/assets/img/icons/arrow.svg');
+    background-image: url('/assets/img/icons-svg/arrow.svg');
     width: 12px;
     height: 17px;
 }
 
 .ico_snake {
-    background-image: url('/assets/img/icons/snake.svg');
+    background-image: url('/assets/img/icons-svg/snake.svg');
     width: 18px;
     height: 14px;
 }
 
 .ico_heart {
-    background-image: url('/assets/img/icons/heart.svg');
+    background-image: url('/assets/img/icons-svg/heart.svg');
     width: 17px;
     height: 14px;
 }
 
 .ico_clock {
-    background-image: url('/assets/img/icons/clock.svg');
+    background-image: url('/assets/img/icons-svg/clock.svg');
     width: 15px;
     height: 17px;
 }
 
 .ico_phone {
-    background-image: url("/assets/img/icons/phone.svg");
+    background-image: url('/assets/img/icons-svg/phone.svg');
     width: 13px;
     height: 11px;
 }
 
 .ico_letter {
-    background-image: url("/assets/img/icons/email.svg");
+    background-image: url('/assets/img/icons-svg/email.svg');
     width: 11px;
     height: 8px;
+}
+
+.ico_close {
+    background-image: url('/assets/img/icons-svg/close.svg');
+    width: 21px;
+    height: 21px;   
 }
