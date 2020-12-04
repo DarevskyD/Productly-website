@@ -1,4 +1,4 @@
-# Productly-site
+# Productly-website
 
 ## Project setup
 ```
